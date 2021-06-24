@@ -13,7 +13,8 @@
         android:theme="@style/Theme.Med_Life">
         <activity android:name=".Profile"></activity>
         <activity android:name=".Home" />
-        <activity android:name=".Create" />
+        <activity android:name=".Create"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

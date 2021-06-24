@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*public void login(View view) {
+    public void login(View view) {
         String email=mail.getText().toString().trim();
         String password= pass.getText().toString();
         if (email.isEmpty()|password.isEmpty()){
@@ -64,9 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-    }*/
-    public void login(View view){
-        startActivity(new Intent(this,Home.class));
     }
     public void save(View view) {
         String email=mail.getText().toString().trim();
@@ -146,4 +143,5 @@ public class MainActivity extends AppCompatActivity {
         });
         b.show();
     }
+
 }
