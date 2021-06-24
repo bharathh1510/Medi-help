@@ -102,7 +102,7 @@
                 android:background="@drawable/shape"
                 android:padding="6dp"
                 android:textColorHint="#000000"
-                android:id="@+id/conpass"
+                android:id="@+id/repass"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
                 />

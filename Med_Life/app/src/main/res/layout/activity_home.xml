@@ -14,12 +14,11 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/home"
         android:text="Home"
-        android:onClick="home"/>
+        />
 
     </LinearLayout>
     <com.google.android.material.tabs.TabLayout

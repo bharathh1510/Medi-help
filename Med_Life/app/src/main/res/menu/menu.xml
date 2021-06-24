@@ -5,7 +5,7 @@
         android:id="@+id/profile"
         />
     <item
-        android:title="Contact"
+        android:title="About us"
         android:id="@+id/contact"
         />
     <item

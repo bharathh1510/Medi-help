@@ -48,6 +48,15 @@
         android:onClick="login"/>
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Forgot password"
+        android:onClick="reset"
+        android:gravity="end"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="If you are a new user. Sign up"
         android:textSize="15dp"

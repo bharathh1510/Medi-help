@@ -51,17 +51,10 @@ public class Home extends AppCompatActivity {
             public int getCount() {
                 return title.length;
             }
-            @Override
-            public CharSequence getPageTitle(int position) {
-                return title[position];
-            }
         });
         tl.setupWithViewPager(vp);
     }
 
-    public void home(View view) {
-        startActivity(new Intent(this, Home.class));
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
@@ -75,7 +68,7 @@ public class Home extends AppCompatActivity {
                 Toast.makeText(this,"Profile", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.contact:
-                Toast.makeText(this, "Contact", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
