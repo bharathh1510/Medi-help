@@ -1,6 +1,7 @@
 package com.example.med_life;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import androidx.fragment.app.Fragment;
@@ -8,12 +9,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
@@ -65,10 +69,21 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.profile:
-                Toast.makeText(this,"Profile", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, Profile.class));
                 break;
             case R.id.contact:
-                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder b= new AlertDialog.Builder(this);
+                View v= LayoutInflater.from(this).inflate(R.layout.contact,null,false);
+                TextView contact= findViewById(R.id.contactus);
+                b.setView(v);
+                b.setCancelable(false);
+                b.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                b.show();
                 break;
             case R.id.settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
@@ -89,5 +104,9 @@ abstract class MyAdapter extends FragmentPagerAdapter{
 
     public MyAdapter(FragmentManager fm, int i) {
         super(fm,i);
+    }
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return title[position];
     }
 }
