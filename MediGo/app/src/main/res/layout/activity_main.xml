@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#BEDDE1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#BEDDE1"
+        android:src="@drawable/icon" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="@color/black"
+        android:id="@+id/email"
+        android:background="@drawable/shape"
+        android:hint="Enter Email"
+        android:drawableLeft="@drawable/ic_person"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="@color/black"
+        android:id="@+id/pass"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="Enter Password"
+        android:background="@drawable/shape"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_marginTop="10dp"
+        android:onClick="login"/>
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinbutton" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Forgot password"
+        android:onClick="reset"
+        android:gravity="end"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="If you are a new user. Sign up"
+        android:textSize="15dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#474646"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginTop="10dp"
+        android:id="@+id/signup"
+        android:onClick="signup"/>
+
+</LinearLayout>

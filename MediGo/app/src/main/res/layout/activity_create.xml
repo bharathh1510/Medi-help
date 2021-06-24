@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEDDE1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#000"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/name"
+            android:hint="Enter your name"
+            android:drawableLeft="@drawable/ic_person"
+            android:padding="6dp"
+            android:drawablePadding="6dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:background="@drawable/shape"
+            android:layout_marginTop="15dp"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/email"
+            android:drawablePadding="6dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_mail"
+            android:textColorHint="#000000"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:hint="Enter your mail"
+            android:textColor="@color/black"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="#090000"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:padding="6dp"
+                android:textColorHint="#000000"
+                android:id="@+id/pass"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeWidth="0dp"
+
+            app:startIconTint="#090000"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:padding="6dp"
+                android:textColorHint="#000000"
+                android:id="@+id/repass"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="6dp"
+            android:id="@+id/number"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textColorHint="#000000"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:hint="Enter your number"/>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/address"
+            android:drawablePadding="6dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_home"
+            android:textColorHint="#000000"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:hint="Enter address"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/dob"
+            android:onClick="dob"
+            android:textColor="#000"
+            android:background="@drawable/shape"
+            android:text="Click here to add DOB"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="save"
+            android:textColorHint="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/shape"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "133889564602",
+    "project_id": "medigo-227a2",
+    "storage_bucket": "medigo-227a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133889564602:android:82c9a350819819708e8783",
+        "android_client_info": {
+          "package_name": "com.example.medigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133889564602-6df55grm4loqlgo1s20m373jp7t4k6kq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medigo",
+            "certificate_hash": "156d0af230ac8bda9ade63234aee3dd288f4c768"
+          }
+        },
+        {
+          "client_id": "133889564602-7dg1prvlu5t01ubh45q435558i4p81e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyxKPc44mUn51Q_sVwehvjUbZkjylZyP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133889564602-7dg1prvlu5t01ubh45q435558i4p81e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
