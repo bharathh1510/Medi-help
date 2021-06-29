@@ -14,7 +14,8 @@
         <activity
             android:name=".Create"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".Home" />
+        <activity android:name=".Home"
+            />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
