@@ -13,20 +13,15 @@
     <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-        android:layout_weight="9.5"
             android:id="@+id/recyclerview"/>
-
-
-
-
-    <Button
-        android:id="@+id/confirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:onClick="confirm"
-        android:text="Confirm" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:onClick="pay"
+            android:id="@+id/pay"/>
     </LinearLayout>
+
 
 
 </FrameLayout>

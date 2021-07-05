@@ -8,12 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Upcoming#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Upcoming extends Fragment {
+public class New extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +19,7 @@ public class Upcoming extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Upcoming() {
+    public New() {
         // Required empty public constructor
     }
 
@@ -37,8 +32,8 @@ public class Upcoming extends Fragment {
      * @return A new instance of fragment Upcoming.
      */
     // TODO: Rename and change types and number of parameters
-    public static Upcoming newInstance(String param1, String param2) {
-        Upcoming fragment = new Upcoming();
+    public static New newInstance(String param1, String param2) {
+        New fragment = new New();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

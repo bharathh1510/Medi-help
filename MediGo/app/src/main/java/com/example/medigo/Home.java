@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.DialogInterface;
@@ -15,18 +17,19 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class Home extends AppCompatActivity {
     TabLayout tl;
     ViewPager vp;
     FirebaseAuth auth;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +40,10 @@ public class Home extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         vp.setAdapter(new MyAdapter(getSupportFragmentManager(),0));
         tl.setupWithViewPager(vp);
-        Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show();
+
     }
+
+
 
 
     public class MyAdapter extends FragmentPagerAdapter {
@@ -53,7 +58,7 @@ public class Home extends AppCompatActivity {
                 return new BookNow();
             }
             if (position == 1) {
-                return new Upcoming();
+                return new New();
             }
             return null;
         }
