@@ -23,7 +23,6 @@ import static android.content.Intent.getIntent;
 
 public class BookNow extends Fragment  {
     RecyclerView rv;
-    int total;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,8 +30,8 @@ public class BookNow extends Fragment  {
         View v=inflater.inflate(R.layout.fragment_book_now, container, false);
         rv=v.findViewById(R.id.recyclerview);
         //total=getIntent().getExtras().getInt(total);
-        int[] images={};
-        String[] hospital= {"Bindhu Hospital", "Koti General Hospital", "Rainbow Hospital", "Apollo Hospital", "Urvasi Hospital"};
+        int[] images={R.drawable.bindu,R.drawable.koti,R.drawable.rainbow,R.drawable.apollo,R.drawable.rudra};
+        String[] hospital= {"Bindhu Hospital", "Koti General Hospital", "Rainbow Hospital", "Apollo Hospital", "Rudra Hospital"};
         String[] p1={"  5000  ","  2000  ","  3000  ","  4400  ","  4500  "};
         String[] p2={"  100000  ","  15500  ","  12500  ","  13500  ","  15550  "};
 

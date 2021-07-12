@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="No number"
             android:id="@+id/hospitalnum"
+            android:autoLink="phone"
             android:textColor="@color/black"
             android:textSize="20dp"/>
     </LinearLayout>
@@ -68,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="no mail"
+            android:autoLink="email"
             android:id="@+id/hospitalemail"
             android:textColor="@color/black"
             android:textSize="20dp"/>
@@ -90,6 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No address"
+            android:autoLink="map"
             android:id="@+id/hospitaladdress"
             android:textColor="@color/black"
             android:textSize="20dp"/>

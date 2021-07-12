@@ -47,7 +47,7 @@ public class Home extends AppCompatActivity {
 
 
     public class MyAdapter extends FragmentPagerAdapter {
-        String[] title = {"Book Now", "Upcoming"};
+        String[] title = {"Book Now", "Pharmacy"};
 
         public MyAdapter(FragmentManager fm, int i) {
             super(fm, i);

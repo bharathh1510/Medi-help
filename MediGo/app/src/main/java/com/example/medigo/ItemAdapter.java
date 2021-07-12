@@ -2,6 +2,7 @@ package com.example.medigo;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
@@ -44,7 +46,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull ItemAdapter.MyViewHolder holder, int position) {
-        holder.iv.setImageResource(R.drawable.ic_launcher_background);
+        holder.iv.setImageResource(image[position]);
         holder.tv1.setText(hospitals[position]);
         holder.tv1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,8 +83,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder>{
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    int p1=Integer.parseInt(holder.pv1.getText().toString());
+                    int p1= Integer.parseInt(holder.pv1.getText().toString());
                     total=total+p1;
+                }
+                else{
+                    total=total;
                 }
             }
         });
@@ -90,8 +95,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder>{
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
-                    int p2=Integer.parseInt(holder.pv2.getText().toString());
-                    total=total+p2;
+                    //int p2=Integer.parseInt(holder.pv2.getText().toString());
+                    //total=total+p2;
+                    Log.i("TITLE", String.valueOf(total));
+                }
+                else{
+                    total=total;
                 }
             }
         });
