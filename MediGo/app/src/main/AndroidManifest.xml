@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediGo">
-        <activity android:name=".Profile"
-            android:parentActivityName=".Home"></activity>
+        <activity android:name=".Settings"></activity>
         <activity
-            android:name=".Create"
+            android:name=".Profile"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Register"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".Home"
-            />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

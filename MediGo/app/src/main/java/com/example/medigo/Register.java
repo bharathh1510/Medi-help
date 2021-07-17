@@ -18,14 +18,14 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Calendar;
 
-public class Create extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     EditText name,mail, pass,repass,number,address;
     TextView dob;
     FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create);
+        setContentView(R.layout.activity_register);
         name=findViewById(R.id.name);
         number=findViewById(R.id.number);
         mail=findViewById(R.id.email);
@@ -35,7 +35,7 @@ public class Create extends AppCompatActivity {
         dob=findViewById(R.id.dob);
         auth=FirebaseAuth.getInstance();
     }
-
+    //public void address(View view) { }
     public void dob(View view) {
         Calendar c=Calendar.getInstance();
         int year,month,day;
@@ -72,14 +72,14 @@ public class Create extends AppCompatActivity {
             Toast.makeText(this, "Enter correct number", Toast.LENGTH_SHORT).show();
         }
         else {
-            auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(Create.this, new OnCompleteListener<AuthResult>() {
+            auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete( Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                startActivity(new Intent(Create.this,Home.class));
+                                startActivity(new Intent(Register.this,Home.class));
                                 finish();
                             }else{
-                                Toast.makeText(Create.this, "Registration failed", Toast.LENGTH_LONG).show();
+                                Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_LONG).show();
                             }
                         }
                     }
@@ -87,4 +87,6 @@ public class Create extends AppCompatActivity {
             );
         }
     }
+
+
 }

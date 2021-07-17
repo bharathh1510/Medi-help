@@ -53,9 +53,10 @@
                 app:layout_constraintStart_toEndOf="@+id/image"
                 app:layout_constraintTop_toBottomOf="@+id/tv1" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="  Price  "
+                android:textAlignment="center"
                 android:layout_marginTop="10dp"
                 android:textColor="#000"
                 android:background="@drawable/shape"
@@ -87,10 +88,11 @@
                 app:layout_constraintStart_toEndOf="@+id/image"
                 app:layout_constraintTop_toBottomOf="@+id/tv2" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text="  Price  "
                 android:textColor="#000"
+                android:textAlignment="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape"
                 android:id="@+id/p2"/>

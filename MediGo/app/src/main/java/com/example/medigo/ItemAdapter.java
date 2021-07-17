@@ -83,8 +83,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder>{
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    int p1= Integer.parseInt(holder.pv1.getText().toString());
-                    total=total+p1;
+                    //int p1= Integer.parseInt(holder.pv1.getText().toString());
+                    //total=total+p1;
                 }
                 else{
                     total=total;
@@ -97,7 +97,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder>{
                 if (isChecked){
                     //int p2=Integer.parseInt(holder.pv2.getText().toString());
                     //total=total+p2;
-                    Log.i("TITLE", String.valueOf(total));
                 }
                 else{
                     total=total;

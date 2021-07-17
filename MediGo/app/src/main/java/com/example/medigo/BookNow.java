@@ -32,8 +32,8 @@ public class BookNow extends Fragment  {
         //total=getIntent().getExtras().getInt(total);
         int[] images={R.drawable.bindu,R.drawable.koti,R.drawable.rainbow,R.drawable.apollo,R.drawable.rudra};
         String[] hospital= {"Bindhu Hospital", "Koti General Hospital", "Rainbow Hospital", "Apollo Hospital", "Rudra Hospital"};
-        String[] p1={"  5000  ","  2000  ","  3000  ","  4400  ","  4500  "};
-        String[] p2={"  100000  ","  15500  ","  12500  ","  13500  ","  15550  "};
+        String[] p1={"5000","2000","3000","4400","4500"};
+        String[] p2={"100000","15500","12500","13500","15550"};
 
         rv.setLayoutManager(new LinearLayoutManager(getContext()));
         ItemAdapter adapter = new ItemAdapter(getActivity(),images,hospital,p1,p2);
