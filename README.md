@@ -4,11 +4,19 @@
 ## Authors
 
 
- [Sathvikchandu]()
+ [Sathvikchandu](https://github.com/sathvikchandu)
  
  
  
- [bharathh1510]()
+ [bharathh1510](https://github.com/bharathh1510)
+ 
+ 
+ 
+ [jyotiaaditya08](https://github.com/jyotiaaditya08)
+ 
+ 
+ 
+ [naveena-bonu](https://github.com/naveena-bonu)
 
 ## Idea behind the project 
 >The main aim behind this project is to create an interface where people can find out where there beds available in the hospital. In this covid-pandemic, the number of hospital beds and oxygen cyliders available are limited and the number of cases are increasing in an exponential rate.
